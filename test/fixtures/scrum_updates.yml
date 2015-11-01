@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  username: MyString
+  scrum_date: 2015-10-29
+  yesterday: MyText
+  today: MyText
+  blockers: MyText
+  meeting_hours: 9.99
+
+two:
+  user_id: MyString
+  username: MyString
+  scrum_date: 2015-10-29
+  yesterday: MyText
+  today: MyText
+  blockers: MyText
+  meeting_hours: 9.99
