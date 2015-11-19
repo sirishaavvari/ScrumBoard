@@ -11,55 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151029181926) do
-
-  create_table "blockers", force: true do |t|
-    t.string   "blocker_type"
-    t.text     "blocker_decription"
-    t.integer  "scrum_update_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "boards", force: true do |t|
-    t.integer  "team_id"
-    t.string   "team_name"
-    t.date     "scrum_date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "meetings", force: true do |t|
-    t.string   "description"
-    t.decimal  "duration"
-    t.integer  "scrum_update_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "scrum_updates", force: true do |t|
-    t.date     "scrum_date"
-    t.text     "yesterday"
-    t.text     "today"
-    t.integer  "board_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "teams", force: true do |t|
-    t.string   "team_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "users", force: true do |t|
-    t.string   "login"
-    t.string   "user_name"
-    t.integer  "team_id"
-    t.boolean  "is_admin"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
